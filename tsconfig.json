@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "diagnostics": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2018",
+    "outDir": "dist",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

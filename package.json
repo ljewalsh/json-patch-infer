@@ -1,0 +1,36 @@
+{
+  "name": "json-patch-infer",
+  "version": "1.0.0",
+  "description": "A simple which compares two objects and infers the json-patch operations to move from one to the other",
+  "main": "dist/index.ts",
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "build": "rm -rf ./dist && ./node_modules/.bin/tsc",
+    "test": "NODE_ENV=test_local ava --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ramda": "^0.26.33",
+    "ava": "^2.4.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.6.4"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "files": [
+      "src/**/*test.ts",
+      "!dist/"
+    ]
+  },
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
